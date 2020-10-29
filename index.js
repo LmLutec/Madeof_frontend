@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000"
+const BASE_URL = "https://madeof.herokuapp.com"
 const HOROSCOPES_URL = `${BASE_URL}/horoscopes`
 const DAILY_URL = `${BASE_URL}/dailies`
 
