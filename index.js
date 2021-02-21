@@ -184,7 +184,9 @@ function addDaily(signData, signId){
   let infoList = document.createElement('ul')
   let viewBtn = document.createElement('button')
   viewBtn.className = "viewOtherDailies"
-  viewBtn.innerText = "View previous daily readings"     
+  viewBtn.innerText = "View previous daily readings" 
+  let viewDailiesByMonth = document.createElement('button') 
+  viewDailiesByMonth.innerText = "View Readings by Month"   
 
   signId.appendChild(divider)
   divider.appendChild(divHdr)
@@ -203,6 +205,7 @@ function addDaily(signData, signId){
   divider.appendChild(brk)
   divider.appendChild(viewBtn)
   divider.appendChild(form)
+  divider.appendChild(viewDailiesByMonth)
 
   let moreDailiesDiv = document.createElement('div')
   moreDailiesDiv.id = "prevDailies"
