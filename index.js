@@ -187,8 +187,11 @@ function addDaily(signData, signId){
   viewBtn.innerText = "View previous daily readings" 
   let dailysByMonthContainer = document.createElement('div')
   dailysByMonthContainer.className = "container"
-  let wrapperDiv = document.createElement('div')
-  wrapperDiv.className = 'wrapper'
+  let wrapperSection = document.createElement('section')
+  wrapperSection.className = 'wrapper'
+  let bannerDiv = document.createElement('div')
+  let bannerText = document.createElement('h1')
+  bannerHeader.innerText = "View readings by month"
   let viewDailiesByMonth = document.createElement('button') 
   viewDailiesByMonth.innerText = "View Readings by Month"   
 
@@ -210,6 +213,9 @@ function addDaily(signData, signId){
   divider.appendChild(viewBtn)
   divider.appendChild(form)
   divider.appendChild(dailysByMonthContainer)
+  divider.appendChild(wrapperSection)
+  divider.appendChild(bannerDiv)
+  divider.appendChild(bannerText)
   // divider.appendChild(viewDailiesByMonth)
 
   let moreDailiesDiv = document.createElement('div')
