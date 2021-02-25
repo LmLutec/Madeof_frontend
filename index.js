@@ -185,6 +185,10 @@ function addDaily(signData, signId){
   let viewBtn = document.createElement('button')
   viewBtn.className = "viewOtherDailies"
   viewBtn.innerText = "View previous daily readings" 
+  let dailysByMonthContainer = document.createElement('div')
+  dailysByMonthContainer.className = "container"
+  let wrapperDiv = document.createElement('div')
+  wrapperDiv.className = 'wrapper'
   let viewDailiesByMonth = document.createElement('button') 
   viewDailiesByMonth.innerText = "View Readings by Month"   
 
@@ -205,7 +209,8 @@ function addDaily(signData, signId){
   divider.appendChild(brk)
   divider.appendChild(viewBtn)
   divider.appendChild(form)
-  divider.appendChild(viewDailiesByMonth)
+  divider.appendChild(dailysByMonthContainer)
+  // divider.appendChild(viewDailiesByMonth)
 
   let moreDailiesDiv = document.createElement('div')
   moreDailiesDiv.id = "prevDailies"
@@ -259,17 +264,17 @@ function addDaily(signData, signId){
         
 
 
-  viewBtn.addEventListener("click", function(){
-    if (moreDailiesDiv.style.display == "" || moreDailiesDiv.style.display == "none"){
-      moreDailiesDiv.style.display = "inline-block"
-      viewBtn.innerText = "Close previous daily readings"
-    }
-    else if (moreDailiesDiv.style.display == "inline-block"){
-      moreDailiesDiv.style.display = "none"
-      viewBtn.innerText = "View previous daily readings"
-    }
+  // viewBtn.addEventListener("click", function(){
+  //   if (moreDailiesDiv.style.display == "" || moreDailiesDiv.style.display == "none"){
+  //     moreDailiesDiv.style.display = "inline-block"
+  //     viewBtn.innerText = "Close previous daily readings"
+  //   }
+  //   else if (moreDailiesDiv.style.display == "inline-block"){
+  //     moreDailiesDiv.style.display = "none"
+  //     viewBtn.innerText = "View previous daily readings"
+  //   }
 
-  })
+  // })
 
   dailyButton.addEventListener('click', function(){
     if (form.style.display === 'none' || form.style.display === ""){
