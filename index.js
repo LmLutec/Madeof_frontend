@@ -329,7 +329,7 @@ function addDaily(signData, signId){
     }
   }
 }
-   
+
 
 function createForm(signData){
   let form = document.createElement('form')
